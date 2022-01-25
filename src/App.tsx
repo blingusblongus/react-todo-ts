@@ -29,9 +29,6 @@ const App: React.FC = () => {
       </span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
       <TodoList todos={todos} setTodos={setTodos}/>
-      {todos.map((todo, i: number) => {
-        return <li key={i}>{todo.todo}</li>;
-      })}
     </div>
   )
 }
