@@ -44,3 +44,46 @@
     width: 90%;
     flex-wrap: wrap;
 }
+
+.todos__single {
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url('https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80');
+}
+
+.todos__single--text {
+    flex: 1;
+    padding: 5px;
+    flex-direction: row-reverse;
+}
+
+.todos__single--text:focus {
+    outline: none;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media (max-width: 1200px) {
+    .todos__single {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 800px){
+    .input {
+        width: 95%;
+    }
+    .todos {
+        width: 95%;
+    }
+    .todos__single {
+        width: 100%;
+    }
+}
