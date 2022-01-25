@@ -1,9 +1,20 @@
 import React from 'react';
 import './styles.css';
 
-const InputField = () => {
+interface Props {
+  todo: string;
+  setTodo: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const InputField = ({todo, setTodo} : Props) => {
+
+  console.log(todo);
   return <form className="input">
-    <input type="input" placeholder="Enter a task" className="input__box"/>
+    <input type="input" 
+      value={todo}
+      onChange={(e)=>setTodo(e.target.value)}
+      placeholder="Enter a task" 
+      className="input__box"/>
     <button type="submit" className="input__submit">Go</button>
   </form>;
 };
