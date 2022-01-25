@@ -2,8 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return <div className='App'>Hello World</div>
+const App: React.FC = () => {
+  return (
+    <div className='App'>
+      <span className='heading'>
+        Hello World
+      </span>
+    </div>
+  )
 }
 
 export default App;
