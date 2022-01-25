@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import InputField from './InputField';
+import InputField from './components/InputField';
 
 const App: React.FC = () => {
   return (
-    <div className='App'>
-      <span className='heading'>
+    <div className="App">
+      <span className="heading">
         Hello World
       </span>
-      <InputField></InputField>
+      <InputField />
     </div>
   )
 }
